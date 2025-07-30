@@ -1,14 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'css/attendance.css' %}">
-        <title>attendance</title>
-    </head>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{form}}
-
-        <input type="submit" value="Submit">
-    </form>
-</html>
+{% extends "base.html" %}
+{%block content%}
+    <h2>Welcome to Little Lemon!</h2>
+    <p>Check out this:</p>
+{%endblock%}

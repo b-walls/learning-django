@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Little Lemon</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+        </ul>
+        <h1>Little Lemon</h1>
+    </nav>
+    {%block content%}
+    {%endblock%}
+    <footer style="background:#f8f8f8; text-align:center; padding:1em; position:fixed; width:100%; bottom:0;">
+        <p>&copy; 2025 Little Lemon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
